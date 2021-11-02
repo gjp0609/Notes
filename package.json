@@ -1,0 +1,21 @@
+{
+    "name": "notes",
+    "version": "3.0.0",
+    "description": "https://github.com/gjp0609/notes",
+    "author": {
+        "name": "gjp0609",
+        "email": "gjp0609@qq.com",
+        "url": "https://github.com/gjp0609"
+    },
+    "repository": {
+        "url": "https://github.com/gjp0609/notes"
+    },
+    "scripts": {
+        "refresh-list": "node .github/actions/refresh-list.js"
+    },
+    "license": "ISC",
+    "dependencies": {},
+    "devDependencies": {
+        "prettier": "^2.4.1"
+    }
+}
