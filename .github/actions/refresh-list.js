@@ -15,7 +15,6 @@ fs.writeFile(path.resolve(rootPath, 'list.json'), JSON.stringify(rootList), (err
     if (err) {
         console.error(err);
     } else {
-        console.log(123);
         console.log('Done!');
     }
 });
