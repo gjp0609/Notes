@@ -5,6 +5,7 @@
     客户端进入`~/.ssh/` 文件夹，生成公私钥
 
     ```shell
+    cd ~/.ssh/
     ssh-keygen -t rsa -C "server_name"
     ```
 
@@ -12,12 +13,17 @@
 
     复制客户端生成的 `server_name_rsa.pub` 文件内容到服务端 `~/.ssh/authorized_keys`
 
+    ```shell
+    cat ~/.ssh/server_name_rsa.pub | ssh user@host "mkdir -p ~/.ssh/ && cat >> ~/.ssh/authorized_keys"
+    chmod 644 ~/.ssh/authorized_keys
+    ```
+
 -   ##### ssh 关闭密码登陆
 
     修改服务端 `/etc/ssh/sshd_config` 文件
 
     ```properties
-    #PasswordAuthentication yes
+    # PasswordAuthentication yes
     PasswordAuthentication no
     ```
 
@@ -34,11 +40,11 @@
     ```config
     # Server Name
     Host servername
-    HostName 192.168.1.123
-    User root
-    Port 22
-    PreferredAuthentications publickey
-    IdentityFile ~/.ssh/server_name_rsa
+        HostName 192.168.1.123
+        User root
+        Port 22
+        PreferredAuthentications publickey,hostbased,password
+        IdentityFile ~/.ssh/server_name_rsa
     ```
 
     执行 `ssh root@servername` 即可登录服务器
@@ -67,3 +73,28 @@
         ```config
         ProxyCommand connect -S 127.0.0.1:1080 -a none %h %p
         ```
+
+### 端口转发
+
+-   ##### 动态转发
+
+    客户端通过本地端口使用远程服务器网络，使用 SOCKS5 协议
+
+    ```bash
+    ssh -D local_port server -N
+    # eg
+    ssh -D 1080 user@host -N
+    ```
+
+-   ##### 本地转发
+
+    ```bash
+    ssh -L local_port:target_host:target_port server -N
+    # eg
+    ssh -L 1080:httpbin.org:80 user@host -N
+    curl 127.0.0.1:1080/get
+    ```
+
+-   ##### 远程转发
+
+    todo
