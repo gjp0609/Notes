@@ -76,7 +76,7 @@
 
 ### 端口转发
 
--   ##### 动态转发
+-   ##### 绑定本地端口
 
     客户端通过本地端口使用远程服务器网络，使用 SOCKS5 协议
 
@@ -86,7 +86,7 @@
     ssh -D 1080 user@host -N
     ```
 
--   ##### 本地转发
+-   ##### 本地端口转发
 
     ```bash
     ssh -L local_port:target_host:target_port server -N
@@ -95,6 +95,13 @@
     curl 127.0.0.1:1080/get
     ```
 
--   ##### 远程转发
+-   ##### 远程端口转发
 
-    todo
+    ```shell
+    # 在远程主机执行
+    ssh -R local_port:targrt_host:target_port local
+    # eg
+    ssh -R 2121:target:22 host1
+    # 在本地主机执行
+    ssh 127.0.0.1:2121
+    ```
