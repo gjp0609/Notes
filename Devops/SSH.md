@@ -37,7 +37,7 @@
 
     编辑 `~/.ssh/config` 文件，新增服务器配置
 
-    ```config
+    ```properties
     # Server Name
     Host servername
         HostName 192.168.1.123
@@ -61,7 +61,7 @@
 
     -   Linux
 
-        ```config
+        ```properties
         # 走 HTTP 代理
         ProxyCommand socat - PROXY:127.0.0.1:%h:%p,proxyport=1080
         # 走 SOCKS 代理
@@ -70,7 +70,7 @@
 
     -   Windows
 
-        ```config
+        ```properties
         ProxyCommand connect -S 127.0.0.1:1080 -a none %h %p
         ```
 
