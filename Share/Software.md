@@ -1,48 +1,58 @@
-- ### [7-Zip](https://www.7-zip.org/)
-- ### [AutoHotKey](https://www.autohotkey.com/)
+-   ### [7-Zip](https://www.7-zip.org/)
+-   ### [AutoHotKey](https://www.autohotkey.com/)
 
-  自定义快捷键/执行脚本
+    自定义快捷键 / 自动化脚本
 
-- ### [Ditto](https://ditto-cp.sourceforge.io/)
-- ### [Everything](https://www.voidtools.com/zh-cn/)
-- ### [frp](https://github.com/fatedier/frp/)
-- ### [KeePassXC](https://github.com/keepassxreboot/keepassxc/)
+-   ### [Ditto](https://ditto-cp.sourceforge.io/)
+-   ### [Everything](https://www.voidtools.com/zh-cn/)
+-   ### [FreeFileSync](https://freefilesync.org/)
 
-  密码管理器
+    文件对比同步工具
 
-- ### [Microsoft Edge](https://www.microsoft.com/zh-cn/edge/)
-- ### [Notepad3](https://github.com/rizonesoft/Notepad3/)
-- ### [PowerToys](https://github.com/microsoft/PowerToys/)
+-   ### [frp](https://github.com/fatedier/frp/)
+-   ### [HFS ~ Http File Server](https://www.rejetto.com/hfs/)
 
-  一些实用工具合集
+    http 协议的文件服务器
 
-- ### [QuickLook](https://github.com/QL-Win/QuickLook/)
+-   ### [KeePassXC](https://github.com/keepassxreboot/keepassxc/)
 
-  空格预览文件
+    密码管理器
 
-- ### [Rufus](https://github.com/pbatard/rufus/)
+-   ### [Microsoft Edge](https://www.microsoft.com/zh-cn/edge/)
+-   ### [Notepad3](https://github.com/rizonesoft/Notepad3/)
+-   ### [PowerToys](https://github.com/microsoft/PowerToys/)
 
-  启动盘制作
+    一些实用工具合集
 
-- ### [Snipaste(v1.16.2)](https://zh.snipaste.com/)
+-   ### [QuickLook](https://github.com/QL-Win/QuickLook/)
 
-  截图/贴图工具
+    空格预览文件
 
-- ### [SpaceSniffer](http://www.uderzo.it/main_products/space_sniffer/)
+-   ### [Rufus](https://github.com/pbatard/rufus/)
 
-  磁盘空间占用分析
+    启动盘制作
 
-- ### [Sumatra PDF](https://github.com/sumatrapdfreader/sumatrapdf/)
+-   ### [Snipaste(v1.16.2)](https://zh.snipaste.com/)
 
-  PDF阅读器
+    截图 / 贴图工具
 
-- ### [Windows Terminal](https://github.com/microsoft/terminal/)
+-   ### [SpaceSniffer](http://www.uderzo.it/main_products/space_sniffer/)
 
-  终端
+    磁盘空间占用分析
 
-- ### [WinSCP](https://winscp.net/eng/download.php/)
-- ### [wxMEdit](https://github.com/wxMEdit/wxMEdit/)
+-   ### [Sumatra PDF](https://github.com/sumatrapdfreader/sumatrapdf/)
 
-  二进制文件查看
+    PDF 阅读器
 
-- ### [](/)
+-   ### [TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor)
+
+    网速 / CPU / 内存占用监控软件
+
+-   ### [Windows Terminal](https://github.com/microsoft/terminal/)
+
+    终端
+
+-   ### [WinSCP](https://winscp.net/eng/download.php/)
+-   ### [wxMEdit](https://github.com/wxMEdit/wxMEdit/)
+
+    二进制文件查看

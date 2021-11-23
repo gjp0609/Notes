@@ -6,7 +6,7 @@
 
     客户端进入`~/.ssh/` 文件夹，生成公私钥
 
-    ```shell
+    ```bash
     cd ~/.ssh/
     ssh-keygen -t rsa -C "server_name"
     ```
@@ -15,7 +15,7 @@
 
     复制客户端生成的 `server_name_rsa.pub` 文件内容到服务端 `~/.ssh/authorized_keys`
 
-    ```shell
+    ```bash
     cat ~/.ssh/server_name_rsa.pub | ssh user@host "mkdir -p ~/.ssh/ && cat >> ~/.ssh/authorized_keys"
     chmod 644 ~/.ssh/authorized_keys
     ```
@@ -31,7 +31,7 @@
 
     服务端执行
 
-    ```shell
+    ```bash
     systemctl restart sshd.service
     ```
 
@@ -99,7 +99,7 @@
 
 -   ##### 远程端口转发
 
-    ```shell
+    ```bash
     # 在远程主机执行
     ssh -R local_port:targrt_host:target_port local
     # eg

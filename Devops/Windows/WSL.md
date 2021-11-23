@@ -1,6 +1,10 @@
 -   #### ssh
 
-
+    ```bash
+    # 从 Windwos 复制配置文件
+    yes | cp /mnt/c/Users/gjp06/.ssh/* ~/.ssh/
+    chmod 600 ~/.ssh/*rsa*
+    ```
 
 -   #### maven
 

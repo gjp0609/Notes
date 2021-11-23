@@ -61,7 +61,7 @@
     export PATH=$GO_HOME/bin:$PATH
     ```
 
-    ```shell
+    ```bash
     mkdir -p /data/bash/
     mkdir -p /data/code/
     mkdir -p /data/frp/

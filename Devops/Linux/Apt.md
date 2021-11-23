@@ -10,7 +10,7 @@
 
 -   ### Debian apt mirror
 
-    ```shell
+    ```bash
     apt install apt-transport-https ca-certificates
     vim /etc/apt/sources.list
     ```
