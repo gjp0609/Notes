@@ -1,22 +1,28 @@
-## 在 Vmware Player 中使用 EasyConnect
+## Vmware Player
 
--   ### 网络代理
+-   ### 全屏隐藏工具条
 
-    虚拟机下载 [gost - GO Simple Tunnel](https://github.com/ginuerzh/gost)
+    在 `~/AppData/Roaming/VMware/preferences.ini` 添加：`pref.vmplayer.fullscreen.nobar = "TRUE"`
 
-    命令行执行 `gost.exe -L=:8080`
+-   ### 在 Vmware Player 中使用 EasyConnect
 
--   ### 端口映射
+    -   #### 网络代理
 
-    编辑 `C:\ProgramData\VMware\vmnetnat.conf`
+        虚拟机下载 [gost - GO Simple Tunnel](https://github.com/ginuerzh/gost)
 
-    在 `[incomingtcp]` 下新增一行
+        命令行执行 `gost.exe -L=:8080`
 
-    ```properties
-    # [主机端口号] = [虚拟机 IP]:[端口号]
-    8888 = 192.168.200.123:8080
-    ```
+    -   #### 端口映射
 
-    ![vmnetnat.conf.png](./images/vmnetnat.conf.png)
+        编辑 `C:\ProgramData\VMware\vmnetnat.conf`
 
-    即可在主机以 `127.0.0.1:8888` 访问虚拟机中 `:8080` 的服务
+        在 `[incomingtcp]` 下新增一行
+
+        ```properties
+        # [主机端口号] = [虚拟机 IP]:[端口号]
+        8888 = 192.168.200.123:8080
+        ```
+
+        ![vmnetnat.conf.png](./images/vmnetnat.conf.png)
+
+        即可在主机以 `127.0.0.1:8888` 访问虚拟机中 `:8080` 的服务
