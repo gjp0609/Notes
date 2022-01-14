@@ -2,15 +2,15 @@
 
 ### 自定义样式
 
-> 1.   访问 `about:config` 页面，设置 `toolkit.legacyUserProfileCustomizations.stylesheets` 选项为 `true`。
+> 1. 访问 `about:config` 页面，设置 `toolkit.legacyUserProfileCustomizations.stylesheets` 选项为 `true`。
 >
-> -   访问 `about:support` 页面，点击 `配置文件夹` 中的打开文件夹，在文件夹内新增 `chrome/userChrome.css` 文件。
+> 1. 访问 `about:support` 页面，点击 `配置文件夹` 中的打开文件夹，在文件夹内新增 `chrome/userChrome.css` 文件。
 >
-> -   打开开发者工具，在 `设置` 的 `高级设置` 中打开 `启用浏览器界面及附加组件的调试工具箱` 和 `启用远程调试` 选项
+> 1. 打开开发者工具，在 `设置` 的 `高级设置` 中打开 `启用浏览器界面及附加组件的调试工具箱` 和 `启用远程调试` 选项
 >
-> -   打开 WEB 开发者工具，打开 `浏览器工具箱` 选项之后即可对浏览器进行调试
+> 1. 打开 WEB 开发者工具，打开 `浏览器工具箱` 选项之后即可对浏览器进行调试
 >
-> -   css 代码示例：[Github](https://github.com/gjp0609/Scripts/blob/master/css/userChrome.less)
+> 1. css 代码示例：[Github](https://github.com/gjp0609/Scripts/blob/master/css/userChrome.less)
 
 ```less
 // userChrome.css
