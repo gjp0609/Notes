@@ -28,6 +28,9 @@ url("chrome://browser/content/browser.xhtml")
 ```json
 {
     "policies": {
+        "AppAutoUpdate": false,
+        "BackgroundAppUpdate": false,
+        "DisableAppUpdate": true,
         "ManualAppUpdateOnly": true,
         "DontCheckDefaultBrowser": true,
         "UserMessaging": {
@@ -37,6 +40,24 @@ url("chrome://browser/content/browser.xhtml")
     }
 }
 ```
+
+-   AppAutoUpdate
+
+    > Enable or disable automatic application update.
+    >
+    > 启用或禁用应用程序自动更新。
+
+-   BackgroundAppUpdate
+
+    > Enable or disable automatic application update in the background, when the application is not running.
+    >
+    > 启用或禁用当应用程序未运行时在后台自动更新。
+
+-   DisableAppUpdate
+
+    > Turn off application updates within Firefox.
+    >
+    > 关闭 Firefox 中的应用程序更新。
 
 -   ManualAppUpdateOnly
 
